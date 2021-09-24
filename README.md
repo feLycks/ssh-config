@@ -1,5 +1,5 @@
 SSH-CONFIG 
-remote Login guide to connecting github projects to ssh
+remote Login guide to connecting github projects with SSH
 
 
 
