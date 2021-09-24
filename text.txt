@@ -1,1 +1,52 @@
-ssh-config
+How to Connect your github repository using SSH Key
+
+STEP #1 -->
+First you have to create new ssh Key with the following command : On your terminal run 
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+Add your github email address on the above command
+This creates a new ssh key, using the provided email as a label.
+
+
+STEP #2 -- > 
+Enter a file in which to save the key (/home/you/.ssh/id_rsa): [Press enter] 
+
+By default use the provided path and press Enter
+
+STEP #3 -->
+Enter a password when prompted. This password will be required for authenticating once you logged in.
+Now your ssh key will get generated. You have to add the public key to your github account.
+Copy the public key to clipboard. You can try any of the following methods
+
+$ cat ~/.ssh/id_rsa.pub
+
+STEP #4 --> 
+Login to your github account, got to settings page
+
+In the user settings sidebar, click SSH and GPG keys.
+
+
+In the “Title” field, add a descriptive label for the new key. 
+For example, if you’re doing a personal project, you might call this key “Project-One”.
+
+STEP #5  
+Paste your key into the “Key” field.
+Click Add SSH key.
+If prompted, confirm your GitHub password.
+After you’ve set up your SSH key and added it to your GitHub account, you can test your connection with the following command : 
+
+$ ssh -T git@github.com
+
+
+Type yes when prompted for ‘continue connection’
+Now you may see the message like this -- > Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+
+
+
+NOTE: 
+If you are accessing your repositories over the SSH protocol, you will receive a warning message each time you connect to a new IP address for github.com. As long as the IP address from the warning is in the range of IP addresses , you shouldn't be concerned. !!
+
+
+CONGRATULATIONS, now connect to your github account using the ssh key !!!
+
+
