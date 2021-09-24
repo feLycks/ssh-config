@@ -44,7 +44,11 @@ Now you may see the message like this -- > Hi username! You've successfully auth
 
 
 NOTE: 
-If you are accessing your repositories over the SSH protocol, you will receive a warning message each time you connect to a new IP address for github.com. As long as the IP address from the warning is in the range of IP addresses , you shouldn't be concerned. !!
+If you are accessing your repositories over the SSH protocol, you will receive a warning message each time you connect to a new IP address for github.com. 
+As long as the IP address from the warning is in the range of IP addresses , you shouldn't be concerned. !!
+
+
+
 
 
 CONGRATULATIONS, now connect to your github account using the ssh key !!!
